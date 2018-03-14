@@ -1,50 +1,57 @@
-	.h, .e, .f {
-		border: 2px solid black;
-		border-radius: 5px;
-		background-color:darkgrey;
-		text-align:center;
+	body{
+		background: linear-gradient(to right, teal, lavender, lavender, lavender,lavender,lavender,teal);
 	}
 	.h {
-		width:15%;
+		border: 2px solid black;
+		border-radius: 5px;
+		background-color:lightgrey;
+		text-align:center;
+		width:200px;
 		display:inline-block;
-	}
-	.e {
-		width:50%;
-		padding:1%
 	}
 	a {
 		color:#505050;
 		font-size:24;
-		font-family:Times New Roman;
-		font-weight:bold;
-		text-decoration:none;
-	}
-	a:hover {
-		color:lightgrey;
-	}
-	.i {
-		height:90px;
-		width:150px;
-	}
-	.i:hover {
-		opacity:0.5;
-	}
-	.f {
-		color:#505050;
-		font-size:20;
 		font-family:Helvetica;
 		font-weight:bold;
+		text-decoration:none;
 	}
 	.c {
 		border: 2px solid black;
 		border-radius: 5px;
-		background-color:gray;
-		display:inline-block;
+		background-color:lightgrey;
+	}
+	a:hover {
+		color:grey;
+	}
+	img {
+		height:100px;
+		width:175px;
+	}
+	img:hover {
+		opacity:0.75;
+	}
+	.m {
+		display:inline;
+		padding-left:2.5%;
+		padding-right:2.5%;
+	}
+	#info {
+		padding:1%;
+		width:30%;
+	}
+	table {
+		background-color:lightgrey;
+		border: 2px solid black;
+		border-radius:5px;
+		width:100%;
+		padding:3px;
 	}
 	td {
+		text-align:center;
 		padding:5px;
 		width:33%;
-		background-color:darkgrey;
+		background-color:lavender;
 		border: 2px solid black;
 		border-radius: 5px;
 	}
