@@ -38,11 +38,6 @@ p {
   font-family:Courier;
   font-weight:bold;
   text-shadow: 0px 0px 3.5px white;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select:none;
-  user-select:none;
-  -o-user-select:none;
 }
 .drop {
   filter:blur(8px);
@@ -98,4 +93,11 @@ p {
   color:white;
   text-shadow:0px 0px 3.5px black;
   text-decoration:none;
+}
+.head, #back {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  user-select:none;
+  -o-user-select:none;
 }
