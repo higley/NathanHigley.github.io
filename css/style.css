@@ -1,5 +1,6 @@
 body{
   background:linear-gradient(to right,grey,lightgrey,grey);
+  min-width:600px
 }
 li {
   display:inline-block;
@@ -21,10 +22,6 @@ header {
 footer {
   padding-top:3%;
   text-align:center;
-}
-nav {
-  max-width:1000px;
-  min-width:1000px;
 }
 p {
   padding:4px;
@@ -75,8 +72,7 @@ p {
   opacity:0.75;
 }
 #back {
-  min-width:1000px;
-  max-width:1000px;
+  width:1000px;
 }
 #con {
   box-shadow: 0px 0px 10px white;
