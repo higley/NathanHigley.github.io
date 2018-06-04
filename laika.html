@@ -1,67 +1,111 @@
+<!DOCTYPE html>
 <html>
-    <head>
-       <title>WE HAVE TO BEAT THE SOVIETS</title>
-       <link rel="stylesheet"type="text/css"href="style.css"/>
-       <style>
-            body {
-              background:linear-gradient(to right, black, grey, black); 
-              min-width:650px;
-            }
-            .ban {
-              font-family:Courier;
-              text-shadow: 0px 0px 7px white;
-            }
-            #big {
-              font-size:36px;  
-            }
-            #sub {
-              font-size:24px;  
-            }
-            nav {
-              background-color:black;
-              position:fixed;
-              left:0;
-              top:0;
-            }
-            #nav {
-              list-style:none;
-            }
-            #nav:hover {
-              background-color:grey;   
-            }
-            #navb {
-              font-family:Courier;
-              font-size:20px;
-              color:white;
-              text-decoration:none;
-            }
-       </style>
-    </head>
-    <body>
-        <nav>
-            <li id="nav"><a id="navb" href="">Early Rocket Dev</a></li>
-            <li id="nav"><a id="navb" href="">Race Begins</a></li>
-            <li id="nav"><a id="navb" href="">Lunar Probes</a></li>
-            <li id="nav"><a id="navb" href="">First human in space</a></li>
-            <li id="nav"><a id="navb" href="">First American in space</a></li>
-            <li id="nav"><a id="navb" href="">Kennedy Speech</a></li>
-            <li id="nav"><a id="navb" href="">Vostok and Mercury</a></li>
-            <li id="nav"><a id="navb" href="">Kennedy proposes joint</a></li>
-            <li id="nav"><a id="navb" href="">Gemini and Voskhod</a></li>
-            <li id="nav"><a id="navb" href="">Soviet Moon programs</a></li>
-            <li id="nav"><a id="navb" href="">Outer Space Treaty</a></li>
-            <li id="nav"><a id="navb" href="">Disaster</a></li>
-            <li id="nav"><a id="navb" href="">Onward to Moon</a></li>
-            <li id="nav"><a id="navb" href="">Apollo 11</a></li>
-            <li id="nav"><a id="navb" href="">Wind Down</a></li>
-            <li id="nav"><a id="navb" href="">Legacy</a></li>
-        </nav>
-        <center>
-        <header>
-        <h1 class="ban" id="big">THE SPACE RACE</h1>
-        <h2 class="ban" id="sub">in which amermicans and slavs make rockets and do the thing</h2>
-        <br /><hr />
-        </header>
-        </center>
-    </body>
-</html>
+<head>
+<title>AAAAAA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background:linear-gradient(to right,grey,white,grey)
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    transition:0.3s;
+}
+#opennav {
+    position:fixed;
+    left:10px;
+    top:10px;
+    font-size:30px;
+    cursor:pointer;
+}
+    
+#opennav:hover {
+    color: #f1f1f1;
+    transition:0.3s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#con {
+  height:50%;
+  width:50%;
+}
+</style>
+</head>
+<body>
+    
+    <center>
+    <h1>THE SPACE RACE</h1>
+    <h2>aaa</h2>
+    </center>
+    
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; NAV</a>
+      <a>Early Rocket Dev</a>
+            <a>Race Begins</a>
+            <a>Lunar Probes</a>
+            <a>First human in space</a>
+            <a>First American in space</a>
+            <a>Kennedy Speech</a>
+            <a>Vostok and Mercury</a>
+            <a>Kennedy proposes joint</a>
+            <a>Gemini and Voskhod</a>
+            <a>Soviet Moon programs</a>
+            <a>Outer Space Treaty</a>
+            <a>Disaster</a>
+            <a>Onward to Moon</a>
+            <a>Apollo 11</a>
+            <a>Wind Down</a>
+            <a>Legacy</a>
+</div>
+<span id="opennav"onclick="openNav()">&#9776; NAV</span>
+    
+    <center>
+    <div id="con">
+        <object data="html/THINGFORLATER.html"></object>
+    </div>
+    </center>
+</body>
+</html> 
