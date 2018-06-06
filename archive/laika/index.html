@@ -1,3 +1,4 @@
+
 <!DOCTYPE html><html>
     <head>
         <title>The Great Space Race</title>
@@ -27,7 +28,14 @@
             body {
                 color:white;
                 font-family: "Lato", sans-serif;
-                background:linear-gradient(to right,grey,white,grey)
+                background-color:black;
+                background-image:
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 4px),
+                radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+                background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+                background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
             }
 
             .sidenav {
@@ -78,25 +86,33 @@
             }
 
             @media screen and (max-height: 450px) {
-              .sidenav {padding-top: 15px;}
-              .sidenav a {font-size: 18px;}
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
             }
 
             .con {
-              height:50%;
-              width:50%;
+                 position:relative;
+                 height:50%;
+                 min-width:500px;
+                 max-width:850px;
+                 border:solid lightgrey 3px;
+                 border-radius:5px;
             }
 
             .con .bg {
-
+                 position:absolute;
+                 height:100%;
+                 width:100%;
+                 background-color:grey;
+                 opacity:0.3;
             }
-
-            .trans {
-              display:block;
-            }
-
+            
             .link{
-              display:none;
+                 display:none;
+            }
+            
+            .trans {
+                 display:block;
             }
         </style>
     </head>
@@ -104,6 +120,7 @@
         <center>
             <h1>THE SPACE RACE</h1>
             <h2>we have to beat the soviets</h2>
+            <hr style="max-width:750px; min-width:250px; border:2px solid white; border-radius:5px;"/><br />
         </center>
         <div id="mainnav" class="sidenav">
             <a href="#" class="closebtn" onclick="closeNav()">&times; NAV</a>
@@ -128,7 +145,9 @@
         <center>
             <div class="con">
               <div class="bg"></div>
-                <div class="link" id="01">aa</div>
+                <div class="link" id="01">
+                    <h1>oh noey</h1>
+                </div>
             </div>
         </center>
     </body>
