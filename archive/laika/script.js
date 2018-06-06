@@ -1,17 +1,17 @@
-            function openNav() {
-                document.getElementById("mainnav").style.width = "250px";
-            }
+function openNav() {
+  document.getElementById("mainnav").style.width = "250px";
+}
 
-            function closeNav() {
-                document.getElementById("mainnav").style.width = "0";
-            }
+function closeNav() {
+  document.getElementById("mainnav").style.width = "0";
+}
 
-            function swap(page){
-                var page = ???;
-                forEach(function swap("trans") {
-                  document.getElementById(page).classList.remove("trans");
-                })
+function swap(page){
+   var id = page.dataset.id;
+   var list = document.querySelectorAll(".trans")
 
-                var id = page.dataset.id;
-                document.getElementById(id).classList.add("trans");
-            }
+   list.forEach(item) {
+      item.classList.remove("trans");
+   })
+   document.getElementById(id).classList.add("trans");
+}
