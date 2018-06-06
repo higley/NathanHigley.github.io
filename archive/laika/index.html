@@ -1,0 +1,131 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>The Great Space Race</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"type="text/css"href="../../css/media.css"/>
+        <link rel="shortcut icon"href="../../img/icon.png"/>
+        <script>
+            function openNav() {
+                document.getElementById("mainnav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mainnav").style.width = "0";
+            }
+
+            function swap(page){
+
+
+                var id = page.dataset.id;
+                document.getElementById(id).classList.add("trans")
+            }
+        </script>
+        <style>
+            body {
+                font-family: "Lato", sans-serif;
+                background:linear-gradient(to right,grey,white,grey)
+            }
+
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font-size: 30px;
+                transition:0.3s;
+            }
+
+            #opennav {
+                position:fixed;
+                left:10px;
+                top:10px;
+                font-size:30px;
+                cursor:pointer;
+            }
+
+            #opennav:hover {
+                color: #f1f1f1;
+                transition:0.3s;
+            }
+
+            @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 18px;}
+            }
+
+            .con {
+              height:50%;
+              width:50%;
+            }
+
+            .con .bg {
+
+            }
+
+            .trans {
+              display:block;
+            }
+
+            .link{
+              display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>THE SPACE RACE</h1>
+            <h2>we have to beat the soviets</h2>
+        </center>
+        <div id="mainnav" class="sidenav">
+            <a href="#" class="closebtn" onclick="closeNav()">&times; NAV</a>
+                <a href="#" data-id="01" onclick="swap(page)">Early Rocket Dev</a>
+                <a href="#" data-id="02" onclick="swap(page)">Race Begins</a>
+                <a href="#" data-id="03" onclick="swap(page)">Lunar Probes</a>
+                <a href="#" data-id="04" onclick="swap(page)">First human in space</a>
+                <a href="#" data-id="05" onclick="swap(page)">First American in space</a>
+                <a href="#" data-id="06" onclick="swap(page)">Kennedy Speech</a>
+                <a href="#" data-id="07" onclick="swap(page)">Vostok and Mercury</a>
+                <a href="#" data-id="08" onclick="swap(page)">Kennedy proposes joint</a>
+                <a href="#" data-id="09" onclick="swap(page)">Gemini and Voskhod</a>
+                <a href="#" data-id="10" onclick="swap(page)">Soviet Moon programs</a>
+                <a href="#" data-id="11" onclick="swap(page)">Outer Space Treaty</a>
+                <a href="#" data-id="12" onclick="swap(page)">Disaster</a>
+                <a href="#" data-id="13" onclick="swap(page)">Onward to Moon</a>
+                <a href="#" data-id="14" onclick="swap(page)">Apollo 11</a>
+                <a href="#" data-id="15" onclick="swap(page)">Wind Down</a>
+                <a href="#" data-id="16" onclick="swap(page)">Legacy</a>
+        </div>
+        <span id="opennav"onclick="openNav()">&#9776; NAV</span>
+        <center>
+            <div class="con">
+              <div class="bg"></div>
+                <div class="link" id="01">aa</div>
+            </div>
+        </center>
+    </body>
+</html>
