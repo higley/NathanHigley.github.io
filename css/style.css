@@ -1,3 +1,6 @@
+* {
+  font-family:Verdana;
+}
 body{
   background:linear-gradient(to right,grey,lightgrey,grey);
   min-width:650px
