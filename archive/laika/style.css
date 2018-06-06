@@ -1,0 +1,90 @@
+          body {
+                color:white;
+                font-family: "Lato", sans-serif;
+                background-color:black;
+                background-image:
+                 radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
+                 radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+                 radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 4px),
+                 radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 3px);
+                 background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+                 background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+            }
+
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font-size: 30px;
+                transition:0.3s;
+            }
+
+            #opennav {
+                position:fixed;
+                left:10px;
+                top:10px;
+                font-size:30px;
+                cursor:pointer;
+            }
+
+            #opennav:hover {
+                color: #f1f1f1;
+                transition:0.3s;
+            }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+            .con {
+                 z-index:1;
+                 min-height:20px;
+                 position:relative;
+                 width:850px;
+                 border:solid lightgrey 3px;
+                 border-radius:5px;
+            }
+
+            .con .bg {
+                 z-index:-1;
+                 position:absolute;
+                 height:100%;
+                 width:100%;
+                 background:grey;
+                 opacity:0.3;
+            }
+
+            .link{
+                 display:none;
+            }
+
+            .trans {
+                 display:block;
+            }
